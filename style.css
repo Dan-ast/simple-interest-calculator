@@ -90,6 +90,10 @@ footer {
     position: relative;
 }
 
+footer a {
+    color: #ccc;
+}
+
 #result {
     opacity: 1;
     transition: opacity 0.5s ease-in-out; 

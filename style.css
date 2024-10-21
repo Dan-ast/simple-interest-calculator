@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(135deg, #141E30, #243B55); /* Gradient background for that sleek look */
+    font-family: 'Poppins', sans-serif; /* A more modern font */
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #ffbb33;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.maindiv {
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    max-width: 400px; /* Make the width responsive */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    text-align: center;
+    margin: 0 auto;
+    transition: transform 0.4s ease; /* Smooth hover effect */
+}
+
+
+input[type="number"],
+input[type="range"] {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+} 
+
+#rate_val {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+input[type="number"]:focus,
+input[type="range"]:focus {
+    border-color: #ffbb33; 
+}
+
+button {
+    background-color: #ffbb33;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9933;
+}
+
+footer {
+    margin-top: 13px;
+    font-size: 12px;
+    color: #ccc;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#result {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+
+
+@media (max-width: 768px) {
+    .maindiv {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
